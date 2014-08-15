@@ -1,0 +1,4 @@
+if(xmlhttp.readyState=4  && xmlhttpStatus=200)
+?t=" + Math.Ramdom(),
+
+

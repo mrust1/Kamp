@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Linux Yaz Kampı  | 2014</title>
+         <meta rel="stylesheet" type="text/css" href="/a.css">
+         <meta rel="stylesheet" type="text/css" href="/form.css">
+        <meta charset="utf-8">
+      <style>
+          body{
+            background: gray;
+          }
+          img {
+            padding: 10px;
+            width: 200px; height: 200px;
+            border-radius: 20px;
+            }
+          li {
+            background-color: blue;
+           color:white;
+          }
+          p{
+            text-align:center;
+            background-color: white;
+            border-style: solid;
+            border-radius: 20px;
+            border-color: grey;
+           }
+          #name {
+            background-color: blue;
+          }
+          #Liste {
+            width: 200px; height: 50px;
+          }
+      </style>
+      <script src="js.js" type="text/javascript" charset="utf-8" async defer>
+
+      </script>
+
+      <script type="text/javascript">
+
+      </script>
+      <script type="text/javascript">
+      for (var i = 0; i <5; i++) {
+       b=5+1;
+      console.log("<br> "+b);
+      document.write("<br>"+b);
+      };
+
+     </script>
+    </head>
+    <body>
+    <div class="body_div">
+
+        <h1 class="header" <style type="text/css" align="center">
+
+        </style> Merhaba </h1>
+        <table>
+            <tr>
+              <td>  <img  id="imageid"  src="wallpaper-135275.jpg"   onclick="myimage()" /></td>
+                <td>  <h3 id="name" >Mehmet Çatıkkaya  </h3>   </td>
+            </tr>
+        </table>
+       <div id="Liste">
+          <ol>
+            <li>  okul </li>
+            <li>  Meslek </li>
+            <li>  Telefon </li>
+          </ol>
+      </div>
+
+      <form id="formtablo" action="https://www.google.com.tr" method="get" accept-charset="utf-8">
+        Name: <input type="text" name="name"value="sad"  placeholder="Name">
+        Last name: <input type="text" name="lastname" value="asdasd" placeholder="Lastname">
+        <input type="button"  value="Send">
+      </form>
+    <button type="button" onclick="myform()">Click</button>
+        <p id="tablom"> </p>
+
+      </div>
+
+      <button type="button" onclick="myfirst()">Click</button>
+
+      <p> 2014 </p>
+      <p id="dene"> asd</p>
+
+      <p style="width: 200px; height: 20px;" id="demo"> 12.9.14 </p>
+    </body>
+    <script type="text/javascript">
+    var city = [ "istanbul", "izmir", "ankara"];
+    text="<ol>";
+     // document.write("<ol>")
+        for (var i = 0; i < city.length; i++) {
+          text+="<li>"+city[i]+"</li>";
+       // document.write("<li>"+city[i]+"</li>")
+        };
+        text+="</ol>";
+        document.write(text);
+         // document.write("</ol>")
+    </script>
+    <script type="text/javascript">
+    function myform () {
+       var x=document.getElementById("formtablo");
+        tex="";
+        for (var i = 0; i < x.length; i++) {
+          tex+=x.elements[i].value+"<br>";
+
+        };
+        document.getElementById("tablom").innerHTML =tex;
+    };
+
+
+    </script>
+<script type="text/javascript">
+     function myimage()
+    {
+      var t= document.getElementById('imageid');
+      t.style.backgroundColor="blue";
+      if (t.src.match("wallpaper-135275.jpg")) {
+         t.src="azLbnxj_460sa_v1.gif";
+      } else{
+         t.src="wallpaper-135275.jpg";
+      }
+    }
+</script>
+</htsml>

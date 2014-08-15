@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> Yat Kampı </title>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" type="text/css" href="x.css">
+    </head>
+      <body onload="cokkie()">
+
+                  <div style="width: 1200px;">
+                  <div id="header" style="background-color:blue;height:80px;width:1250px;text-align:center;" >
+                  <h1 id="main_id">MAİN TİTLE of WEB PAGE</h1>
+                      <p id="cok"> </p>
+                  </div>
+
+
+                  <div class="left" style="background-color:#FFD700;height:500px;width:200px;float:left;text-align:center;" >
+                  <h3 class="html_id">
+                  <button type="button" onmouseover="html()" onclick="header_html()">Html</button> </h3>
+                  <h3 class="css_id">
+                  <button type="button" onmouseover="css()" onclick="header_css()">Css</button>
+                  </h3>
+                  <h3 class="java_id">
+                  <button type="button" onmouseover="java()" onclick="header_java()">Java</button>
+                  </h3>
+                  <h3 class="java_id"> ÇŞĞ </h3>
+
+                  </div>
+
+                  <div>
+                   <div id="content" style="background-color:#EEEEEE;height:500px;width:1000px;float:left;">
+                          <h2 id="yazdir"> Content goes here </h2>
+                   <h2 id="content_id"> Content goes here </h2>
+                  </div>
+                    <div id="footer" style="background-color:#BFA190;clear:both;text-align:center;">
+                    Copyright  <a href="mailto:mehmetctkya@gmail.com?subject=feedback" "email me">email me</a> </div>
+<div>
+      </body>
+
+      <script type="text/javascript">
+      // var c = obj.innerHTML;
+      // var mesaj=document.getElementById('asd');
+      // mesaj.innerHTML=c;
+
+      function html(){
+        var x =  document.getElementById('content');
+        x.style.backgroundColor="Yellow";
+        x.innerHTML="<h1> HTML </h1>";
+      }
+      function css(){
+        var x =  document.getElementById('content');
+        x.style.backgroundColor="red";
+        x.innerHTML="<h1> CSS </h1>";
+      }
+      function java(){
+        var x =  document.getElementById('content');
+        x.style.backgroundColor="grey";
+        x.innerHTML="<h1> JAVATAR </h1>";
+      }
+      function header_html(){
+        var x =  document.getElementById('main_id');
+        x.innerHTML="<h1> Html Header </h1>";
+      }
+       function header_css(){
+        var x =  document.getElementById('main_id');
+        x.innerHTML="<h1> Css Header </h1>";
+      }
+       function header_java(){
+        var x =  document.getElementById('main_id');
+        x.innerHTML="<h1> JavaScript Header </h1>";
+      }
+      function cokkie () {
+        if (navigator.cookieEnabled) {
+          mesaj="On"
+        }
+        else
+        {
+          mesaj="Off"
+        }
+        document.getElementById('cok').innerHTML=mesaj;
+      }
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.open("GET", "x.json" , false);
+      xmlhttp.send();
+      console.log(xmlhttp.responseText);
+      document.getElementById("yazdir").innerHTML=xmlhttp.responseText;
+      var json = JSON.parse(xmlhttp);
+      document.getElementById("yazdir").innerHTML=json.bookstore[0].title;
+
+
+      </script>
+</html>
